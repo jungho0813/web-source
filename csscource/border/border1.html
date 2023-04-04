@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      margin: 15px;
+      border-radius: 5px;
+    }
+    .box1 {
+      border-style: solid;
+      border-color: red;
+    }
+    .box2 {
+      border-style: dotted;
+      border-width: 10px;
+    }
+    .box3 {
+      border-style: dashed;
+    }
+    .box4 {
+      border-style: solid dashed; /*상하좌우(시계방향), solid dashed(상,우)*/
+      border-width: 10px 20px;
+    }
+    .box5 {
+      border-style: solid dashed double; /* 상하좌우(시계방향), solid dashed(상,우) */
+      border-width: 5px 10px 50px;
+    }
+    .box6 {
+      border-style: solid dashed double dotted; 
+      border-color: rebeccapurple red blue green;
+    }
+    .box7{
+        width: 500px;
+        padding: 10px;
+        border-right: 5px solid red;
+    }
+  </style>
+  <body>
+    <!-- border : 테두리
+         border-style : 선종류(solid, dotted, dashed, double, groove, inset, outset)
+         border-width : 두께
+         border-color : 색상
+
+         border : 두께 스타일 색상;
+    -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <p>
+        <div class="box7"></div>
+    </p>
+  </body>
+</html>
