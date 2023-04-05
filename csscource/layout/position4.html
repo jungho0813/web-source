@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        vertical-align: top;
+      }
+      .box {
+        border: 1px solid black;
+        padding: 10px;
+        position: relative;
+      }
+      .a {
+        background: blue;
+        left: 50px;
+        top: 50px;
+      }
+      .b {
+        background: red;
+        left: 50px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      position:relative;
+
+      위치 상 부모 요소를 기준으로 배치
+      부모요소 : opsition 값이 부여된 다른요소
+                position 값이 부여된 요소가 없다면 화면을 기준
+     -->
+    <div class="box a">
+      <img src="https://placehold.co/100x120" alt="" />
+    </div>
+    <div class="box b">
+      <img src="https://placehold.co/100x120" alt="" />
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo cumque vel
+      voluptas neque voluptates iste minima deserunt doloremque, tempore magni
+      molestias omnis error et libero eum, reprehenderit iure quod praesentium!
+    </p>
+  </body>
+</html>

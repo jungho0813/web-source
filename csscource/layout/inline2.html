@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="inline2.css" />
+  </head>
+  <body>
+    <!-- block 요소를 옆으로나열
+    1) display: inline-block;
+            - 하단, 오른쪽 공백
+            - vertical-align: top; 하단 공백 제거
+            - font-size : 0; 오른쪽 공백제거
+            - text-align 속성 사용가능 
+    
+    2) float:left, right;   
+            - 자식 요소들이 float 일 때 떠 있는 개념 이기 때문에
+              부모의 hight가 0인 상태임 
+              => 1) overflow:hidden => 부모의 높이는 해결 되지만 다른 요소들이 따라온다면 해결이 다 안됨
+                 2) clear:both{
+                      -float 다음요소에서 해제하기
+                      - 가상요소 사용해서 해제
+                 }
+-->
+    <div class="grid clearfix">
+      <div class="grid-item a"></div>
+      <div class="grid-item b"></div>
+      <div class="grid-item c"></div>
+    </div>
+  </body>
+</html>
