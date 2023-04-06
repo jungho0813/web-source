@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
+      .container .item {
+        width: 200px;
+        height: 100px;
+        border: 4px dashed black;
+      }
+      .container .item:first-child {
+        background: red;
+        order: 4;
+      }
+      .container .item:nth-child(2) {
+        background: blue;
+        order: 2;
+      }
+      .container .item:nth-child(3) {
+        background: magenta;
+        order: 1;
+      }
+      .container .item:nth-child(4) {
+        background: green;
+        order: 3;
+      }
+      .container .item:last-child {
+        background: yellow;
+        order: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flex : 배치되어야 할 요소들을 플렉스 컨테이너로 묶어야함
+         display:flex;
+         flex-direction: row | row-reverse | column | column-reverse
+        
+        수직 => 수평
+        1. display : inline-block;
+        2. float : left or right;
+        3. flex
+    -->
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </div>
+  </body>
+</html>
