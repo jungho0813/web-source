@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 수학 영어 국어 점수를 입력받은 후 평균을 구한 뒤
+      // 평균에 따라 성적 출력
+      // >=90 A >=80 B >=70 C >=60D F
+      let number1 = Number(prompt("숫자를 입력해주세요", "숫자"));
+      let number2 = Number(prompt("숫자를 입력해주세요", "숫자"));
+      let number3 = Number(prompt("숫자를 입력해주세요", "숫자"));
+      let number4 = (number1 + number2 + number3) / 3;
+      if (number4 >= 90) {
+        console.log("A");
+      } else if (number4 >= 80) {
+        console.log("B");
+      } else if (number4 >= 70) {
+        console.log("C");
+      } else if (number4 >= 60) {
+        console.log("D");
+      } else {
+        console.log("F");
+      }
+    </script>
+  </body>
+</html>
